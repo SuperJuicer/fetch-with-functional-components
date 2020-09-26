@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
+import GitHubUser from './GitHubUser';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-       
-      </header>
-    </div>
-  );
-}
+    <>
+      <p>Ooh! Look at all this data!</p> 
+      <GitHubUser login={'superjuicer'}/>);
+    </>
+  )};
 
 export default App;
