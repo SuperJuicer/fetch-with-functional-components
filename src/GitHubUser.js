@@ -12,7 +12,7 @@ const GitHubUser = ({login}) => {
           .then(setData)
           .catch(error => (console.log(error)));
     
-    }, [login, data]);
+    }, [login]);
   
     if (data && data.length !== 0) {
       return (

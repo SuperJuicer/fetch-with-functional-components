@@ -5,8 +5,8 @@ import GitHubUser from './GitHubUser';
 const App = () => {
   return (
     <>
-    <p>Ooh! Look at all this data!</p> 
-    <GitHubUser login={'superjuicer'}/>);
+      <p>Ooh! Look at all this data!</p> 
+      <GitHubUser login={'superjuicer'}/>);
     </>
   )};
 
