@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import './GitHubUser.css';
 
 const GitHubUser = ({login}) => {
     // We need some state
@@ -14,13 +15,17 @@ const GitHubUser = ({login}) => {
     
     }, [login]);
   
+    // Make sure we got what we think we got before displaying data.
     if (data && data.length !== 0) {
       return (
         <>       
-          <p style={{wordBreak: 'break-all'}}>{JSON.stringify(data)}</p>
-          <hr></hr>
-          <h1>{data.login}</h1>
-          <a href={data.html_url}><img src={data.avatar_url} alt="an orange with a stem and a leaf" max-width="auto"/></a>
+          <a href={data.html_url}>
+            <h1>{data.login}</h1>
+            <img src={data.avatar_url} alt="an orange with a stem and a leaf" />
+          </a>
+          <a href={`https://github.com/${login}?tab=repositories`}>
+            <h2>{data.public_repos} repos</h2>
+          </a>
         </>
       )
     }
