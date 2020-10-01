@@ -1,6 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import './GitHubUser.css';
 
+/**
+ * Function to render GitHubUser
+ *
+ * @property login - The GitHub username for whom we are displaying data
+ */
 const GitHubUser = ({login}) => {
     // We need some state
     const [data, setData] = useState(null);
