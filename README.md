@@ -4,7 +4,7 @@
 
 ## URL
 
-https://fetch-with-functional-components.netlify.app/
+- https://fetch-with-functional-components.netlify.app/
 
 ## Supported Platforms
 
