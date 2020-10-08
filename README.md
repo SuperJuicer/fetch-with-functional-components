@@ -1,6 +1,10 @@
-# Fetch with functional components
+# [Fetch with functional components](https://fetch-with-functional-components.netlify.app/)
 
 - This app uses the fetch API to retrieve data from a remote site. Some of the data is displayed in a user-friendly manner.
+
+## URL
+
+- https://fetch-with-functional-components.netlify.app/
 
 ## Supported Platforms
 
